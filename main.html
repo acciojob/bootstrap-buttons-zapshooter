@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Bootstrap Buttons Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body { padding: 25px; }
+    .btn-block-custom {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 18px;
+    }
+    .button-row {
+      margin-bottom: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h4 class="mb-3">Bootstrap Buttons</h4>
+  <div class="button-row">
+    <button id="button-1" class="btn btn-primary">Button-1</button>
+    <button id="button-2" class="btn btn-outline-secondary">Button-2</button>
+    <button id="button-3" class="btn btn-success btn-lg">Button-3</button>
+    <button id="button-4" class="btn btn-danger btn-sm">Button-4</button>
+  </div>
+  <button id="button-5" class="btn btn-warning btn-lg btn-block btn-block-custom">Button-5</button>
+  <div class="button-row">
+    <button id="button-6" class="btn btn-info" disabled>Button-6</button>
+    <button id="button-7" class="btn btn-light">Button-7</button>
+    <a id="button-8" class="btn btn-link" href="#">Button-8</a>
+  </div>
 </body>
-
 </html>
